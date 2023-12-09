@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Track</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form onsubmit="savedetails(event)">
+    <div class="nav">
+        <div class="input">
+            <label for="item-name">Item Name</label><br>
+            <input type="text" id="item-name" class="input-box" name="itemname" required>
+        </div>
+
+        <div class="input">
+            <label for="description">Description</label><br>
+            <input type="text" id="description" class="input-box" name="description" required>
+        </div>
+        
+        <div class="input">
+            <label for="price">Price</label><br>
+            <input type="text" id="price" class="input-box" name="price" required>
+        </div>
+        
+        <div class="input">
+            <label for="quantity">Quantity</label><br>
+            <input type="text" id="quantity" class="input-box" name="quantity" required>
+        </div>
+
+        <div class="input">
+           <button type="submit" id="submit" class="submit">Add Items</button>
+        </div>
+    </div>
+</form>
+<div id="main">
+</div>
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <script src="index.js"></script>
+   
+</body>
+</html>
